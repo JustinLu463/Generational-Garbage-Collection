@@ -1,0 +1,655 @@
+
+duInitMalloc
+duInitMalloc: Initialized heap 0 with free block at 0x5cf1b7ca8040, size 1000
+duInitMalloc: Initialized heap 1 with free block at 0x5cf1b7ca8440, size 1000
+duInitMalloc: Initialized heap 2 with free block at 0x5cf1b7ca8840, size 1000
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Free at 0x5cf1b7ca8040, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8040, size 1000
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+
+duMalloc a0
+duMalloc: Allocated block of size 64 in heap 0 at address 0x5cf1b7ca8058
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 64, surv: 0
+Free at 0x5cf1b7ca8098, size 912, surv: 0
+
+Graphical Representation:
+AAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8098, size 912
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = 0x5cf1b7ca8058
+
+duMalloc a1
+duMalloc: Allocated block of size 48 in heap 0 at address 0x5cf1b7ca80b0
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Free at 0x5cf1b7ca80e0, size 840, surv: 0
+
+Graphical Representation:
+AAAAAAAAAAABBBBBBBBBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca80e0, size 840
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = 0x5cf1b7ca8058
+ManagedList[1] = 0x5cf1b7ca80b0
+
+Memory access is: Denver
+
+duMalloc a2
+duMalloc: Allocated block of size 64 in heap 0 at address 0x5cf1b7ca80f8
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Used at 0x5cf1b7ca80e0, size 64, surv: 0
+Free at 0x5cf1b7ca8138, size 752, surv: 0
+
+Graphical Representation:
+AAAAAAAAAAABBBBBBBBBCCCCCCCCCCCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8138, size 752
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = 0x5cf1b7ca8058
+ManagedList[1] = 0x5cf1b7ca80b0
+ManagedList[2] = 0x5cf1b7ca80f8
+
+duMalloc a3
+duMalloc: Allocated block of size 24 in heap 0 at address 0x5cf1b7ca8150
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Used at 0x5cf1b7ca80e0, size 64, surv: 0
+Used at 0x5cf1b7ca8138, size 24, surv: 0
+Free at 0x5cf1b7ca8168, size 704, surv: 0
+
+Graphical Representation:
+AAAAAAAAAAABBBBBBBBBCCCCCCCCCCCDDDDDDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8168, size 704
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = 0x5cf1b7ca8058
+ManagedList[1] = 0x5cf1b7ca80b0
+ManagedList[2] = 0x5cf1b7ca80f8
+ManagedList[3] = 0x5cf1b7ca8150
+
+duMalloc a4
+duMalloc: Allocated block of size 88 in heap 0 at address 0x5cf1b7ca8180
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Used at 0x5cf1b7ca80e0, size 64, surv: 0
+Used at 0x5cf1b7ca8138, size 24, surv: 0
+Used at 0x5cf1b7ca8168, size 88, surv: 0
+Free at 0x5cf1b7ca81d8, size 592, surv: 0
+
+Graphical Representation:
+AAAAAAAAAAABBBBBBBBBCCCCCCCCCCCDDDDDDEEEEEEEEEEEEEEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca81d8, size 592
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = 0x5cf1b7ca8058
+ManagedList[1] = 0x5cf1b7ca80b0
+ManagedList[2] = 0x5cf1b7ca80f8
+ManagedList[3] = 0x5cf1b7ca8150
+ManagedList[4] = 0x5cf1b7ca8180
+
+duMalloc a5
+duMalloc: Allocated block of size 80 in heap 0 at address 0x5cf1b7ca81f0
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Used at 0x5cf1b7ca80e0, size 64, surv: 0
+Used at 0x5cf1b7ca8138, size 24, surv: 0
+Used at 0x5cf1b7ca8168, size 88, surv: 0
+Used at 0x5cf1b7ca81d8, size 80, surv: 0
+Free at 0x5cf1b7ca8240, size 488, surv: 0
+
+Graphical Representation:
+AAAAAAAAAAABBBBBBBBBCCCCCCCCCCCDDDDDDEEEEEEEEEEEEEEFFFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8240, size 488
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = 0x5cf1b7ca8058
+ManagedList[1] = 0x5cf1b7ca80b0
+ManagedList[2] = 0x5cf1b7ca80f8
+ManagedList[3] = 0x5cf1b7ca8150
+ManagedList[4] = 0x5cf1b7ca8180
+ManagedList[5] = 0x5cf1b7ca81f0
+
+duFree a0
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Free at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Used at 0x5cf1b7ca80e0, size 64, surv: 0
+Used at 0x5cf1b7ca8138, size 24, surv: 0
+Used at 0x5cf1b7ca8168, size 88, surv: 0
+Used at 0x5cf1b7ca81d8, size 80, surv: 0
+Free at 0x5cf1b7ca8240, size 488, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaAAAAAAAAABBBBBBBBBBBCCCCCCDDDDDDDDDDDDDDEEEEEEEEEEEEEbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free List
+Block at 0x5cf1b7ca8040, size 64
+Block at 0x5cf1b7ca8240, size 488
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca80b0
+ManagedList[2] = 0x5cf1b7ca80f8
+ManagedList[3] = 0x5cf1b7ca8150
+ManagedList[4] = 0x5cf1b7ca8180
+ManagedList[5] = 0x5cf1b7ca81f0
+
+duFree a3
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Free at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Used at 0x5cf1b7ca80e0, size 64, surv: 0
+Free at 0x5cf1b7ca8138, size 24, surv: 0
+Used at 0x5cf1b7ca8168, size 88, surv: 0
+Used at 0x5cf1b7ca81d8, size 80, surv: 0
+Free at 0x5cf1b7ca8240, size 488, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaAAAAAAAAABBBBBBBBBBBbbbbbbCCCCCCCCCCCCCCDDDDDDDDDDDDDcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+Free List
+Block at 0x5cf1b7ca8040, size 64
+Block at 0x5cf1b7ca8138, size 24
+Block at 0x5cf1b7ca8240, size 488
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca80b0
+ManagedList[2] = 0x5cf1b7ca80f8
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca8180
+ManagedList[5] = 0x5cf1b7ca81f0
+
+duMalloc a6
+duMalloc: Allocated block of size 160 in heap 0 at address 0x5cf1b7ca8258
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Free at 0x5cf1b7ca8040, size 64, surv: 0
+Used at 0x5cf1b7ca8098, size 48, surv: 0
+Used at 0x5cf1b7ca80e0, size 64, surv: 0
+Free at 0x5cf1b7ca8138, size 24, surv: 0
+Used at 0x5cf1b7ca8168, size 88, surv: 0
+Used at 0x5cf1b7ca81d8, size 80, surv: 0
+Used at 0x5cf1b7ca8240, size 160, surv: 0
+Free at 0x5cf1b7ca82f8, size 304, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaAAAAAAAAABBBBBBBBBBBbbbbbbCCCCCCCCCCCCCCDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEEEEccccccccccccccccccccccccccccccccccccccccc
+Free List
+Block at 0x5cf1b7ca8040, size 64
+Block at 0x5cf1b7ca8138, size 24
+Block at 0x5cf1b7ca82f8, size 304
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca80b0
+ManagedList[2] = 0x5cf1b7ca80f8
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca8180
+ManagedList[5] = 0x5cf1b7ca81f0
+ManagedList[6] = 0x5cf1b7ca8258
+
+********* MINOR COLLECTION ***********
+Starting minor collection. Moving live objects from heap 0 to heap 1.
+Moved block 1 to new young heap. New address: 0x5cf1b7ca8458
+Moved block 2 to new young heap. New address: 0x5cf1b7ca84a0
+Moved block 4 to new young heap. New address: 0x5cf1b7ca84f8
+Moved block 5 to new young heap. New address: 0x5cf1b7ca8568
+Moved block 6 to new young heap. New address: 0x5cf1b7ca85d0
+MEMORY DUMP
+Current heap (0/1 young): 1
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8440, size 48, surv: 1
+Used at 0x5cf1b7ca8488, size 64, surv: 1
+Used at 0x5cf1b7ca84e0, size 88, surv: 1
+Used at 0x5cf1b7ca8550, size 80, surv: 1
+Used at 0x5cf1b7ca85b8, size 160, surv: 1
+Free at 0x5cf1b7ca8670, size 440, surv: 0
+
+Graphical Representation:
+AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEEEEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8670, size 440
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8458
+ManagedList[2] = 0x5cf1b7ca84a0
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca84f8
+ManagedList[5] = 0x5cf1b7ca8568
+ManagedList[6] = 0x5cf1b7ca85d0
+
+Memory access is: Denver
+
+duFree a2
+MEMORY DUMP
+Current heap (0/1 young): 1
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8440, size 48, surv: 1
+Free at 0x5cf1b7ca8488, size 64, surv: 1
+Used at 0x5cf1b7ca84e0, size 88, surv: 1
+Used at 0x5cf1b7ca8550, size 80, surv: 1
+Used at 0x5cf1b7ca85b8, size 160, surv: 1
+Free at 0x5cf1b7ca8670, size 440, surv: 0
+
+Graphical Representation:
+AAAAAAAAAaaaaaaaaaaaBBBBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free List
+Block at 0x5cf1b7ca8488, size 64
+Block at 0x5cf1b7ca8670, size 440
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8458
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca84f8
+ManagedList[5] = 0x5cf1b7ca8568
+ManagedList[6] = 0x5cf1b7ca85d0
+
+duMalloc a7
+duMalloc: Allocated block of size 16 in heap 1 at address 0x5cf1b7ca84a0
+MEMORY DUMP
+Current heap (0/1 young): 1
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8440, size 48, surv: 1
+Used at 0x5cf1b7ca8488, size 16, surv: 1
+Free at 0x5cf1b7ca84b0, size 24, surv: 0
+Used at 0x5cf1b7ca84e0, size 88, surv: 1
+Used at 0x5cf1b7ca8550, size 80, surv: 1
+Used at 0x5cf1b7ca85b8, size 160, surv: 1
+Free at 0x5cf1b7ca8670, size 440, surv: 0
+
+Graphical Representation:
+AAAAAAAAABBBBBaaaaaaCCCCCCCCCCCCCCDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEEEEbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free List
+Block at 0x5cf1b7ca84b0, size 24
+Block at 0x5cf1b7ca8670, size 440
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8458
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca84f8
+ManagedList[5] = 0x5cf1b7ca8568
+ManagedList[6] = 0x5cf1b7ca85d0
+ManagedList[7] = 0x5cf1b7ca84a0
+
+********* MINOR COLLECTION ***********
+Starting minor collection. Moving live objects from heap 1 to heap 0.
+Moved block 1 to new young heap. New address: 0x5cf1b7ca8058
+Moved block 4 to new young heap. New address: 0x5cf1b7ca80a0
+Moved block 5 to new young heap. New address: 0x5cf1b7ca8110
+Moved block 6 to new young heap. New address: 0x5cf1b7ca8178
+Moved block 7 to new young heap. New address: 0x5cf1b7ca8230
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 48, surv: 2
+Used at 0x5cf1b7ca8088, size 88, surv: 2
+Used at 0x5cf1b7ca80f8, size 80, surv: 2
+Used at 0x5cf1b7ca8160, size 160, surv: 2
+Used at 0x5cf1b7ca8218, size 16, surv: 2
+Free at 0x5cf1b7ca8240, size 488, surv: 1
+
+Graphical Representation:
+AAAAAAAAABBBBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDEEEEEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8240, size 488
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8058
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca80a0
+ManagedList[5] = 0x5cf1b7ca8110
+ManagedList[6] = 0x5cf1b7ca8178
+ManagedList[7] = 0x5cf1b7ca8230
+
+duMalloc a8
+duMalloc: Allocated block of size 56 in heap 0 at address 0x5cf1b7ca8258
+MEMORY DUMP
+Current heap (0/1 young): 0
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8040, size 48, surv: 2
+Used at 0x5cf1b7ca8088, size 88, surv: 2
+Used at 0x5cf1b7ca80f8, size 80, surv: 2
+Used at 0x5cf1b7ca8160, size 160, surv: 2
+Used at 0x5cf1b7ca8218, size 16, surv: 2
+Used at 0x5cf1b7ca8240, size 56, surv: 1
+Free at 0x5cf1b7ca8290, size 408, surv: 0
+
+Graphical Representation:
+AAAAAAAAABBBBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDEEEEEFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8290, size 408
+Old Heap
+Memory Block
+Free at 0x5cf1b7ca8840, size 1000, surv: 0
+
+Graphical Representation:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8840, size 1000
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8058
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca80a0
+ManagedList[5] = 0x5cf1b7ca8110
+ManagedList[6] = 0x5cf1b7ca8178
+ManagedList[7] = 0x5cf1b7ca8230
+ManagedList[8] = 0x5cf1b7ca8258
+
+********* MINOR COLLECTION ***********
+Starting minor collection. Moving live objects from heap 0 to heap 1.
+duMalloc: Allocated block of size 48 in heap 2 at address 0x5cf1b7ca8858
+Moved block 1 to old heap. New address: 0x5cf1b7ca8858
+duMalloc: Allocated block of size 88 in heap 2 at address 0x5cf1b7ca88a0
+Moved block 4 to old heap. New address: 0x5cf1b7ca88a0
+duMalloc: Allocated block of size 80 in heap 2 at address 0x5cf1b7ca8910
+Moved block 5 to old heap. New address: 0x5cf1b7ca8910
+duMalloc: Allocated block of size 160 in heap 2 at address 0x5cf1b7ca8978
+Moved block 6 to old heap. New address: 0x5cf1b7ca8978
+duMalloc: Allocated block of size 16 in heap 2 at address 0x5cf1b7ca8a30
+Moved block 7 to old heap. New address: 0x5cf1b7ca8a30
+Moved block 8 to new young heap. New address: 0x5cf1b7ca8458
+MEMORY DUMP
+Current heap (0/1 young): 1
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8440, size 56, surv: 2
+Free at 0x5cf1b7ca8490, size 920, surv: 23793
+
+Graphical Representation:
+AAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8490, size 920
+Old Heap
+Memory Block
+Used at 0x5cf1b7ca8840, size 48, surv: 0
+Used at 0x5cf1b7ca8888, size 88, surv: 0
+Used at 0x5cf1b7ca88f8, size 80, surv: 0
+Used at 0x5cf1b7ca8960, size 160, surv: 0
+Used at 0x5cf1b7ca8a18, size 16, surv: 0
+Free at 0x5cf1b7ca8a40, size 488, surv: 0
+
+Graphical Representation:
+AAAAAAAAABBBBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDEEEEEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8a40, size 488
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8858
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x5cf1b7ca88a0
+ManagedList[5] = 0x5cf1b7ca8910
+ManagedList[6] = 0x5cf1b7ca8978
+ManagedList[7] = 0x5cf1b7ca8a30
+ManagedList[8] = 0x5cf1b7ca8458
+
+duFree a4
+MEMORY DUMP
+Current heap (0/1 young): 1
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8440, size 56, surv: 2
+Free at 0x5cf1b7ca8490, size 920, surv: 23793
+
+Graphical Representation:
+AAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8490, size 920
+Old Heap
+Memory Block
+Used at 0x5cf1b7ca8840, size 48, surv: 0
+Free at 0x5cf1b7ca8888, size 88, surv: 0
+Used at 0x5cf1b7ca88f8, size 80, surv: 0
+Used at 0x5cf1b7ca8960, size 160, surv: 0
+Used at 0x5cf1b7ca8a18, size 16, surv: 0
+Free at 0x5cf1b7ca8a40, size 488, surv: 0
+
+Graphical Representation:
+AAAAAAAAAaaaaaaaaaaaaaaBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCDDDDDbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free List
+Block at 0x5cf1b7ca8888, size 88
+Block at 0x5cf1b7ca8a40, size 488
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8858
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = (nil)
+ManagedList[5] = 0x5cf1b7ca8910
+ManagedList[6] = 0x5cf1b7ca8978
+ManagedList[7] = 0x5cf1b7ca8a30
+ManagedList[8] = 0x5cf1b7ca8458
+
+duFree a5
+MEMORY DUMP
+Current heap (0/1 young): 1
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8440, size 56, surv: 2
+Free at 0x5cf1b7ca8490, size 920, surv: 23793
+
+Graphical Representation:
+AAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8490, size 920
+Old Heap
+Memory Block
+Used at 0x5cf1b7ca8840, size 48, surv: 0
+Free at 0x5cf1b7ca8888, size 88, surv: 0
+Free at 0x5cf1b7ca88f8, size 80, surv: 0
+Used at 0x5cf1b7ca8960, size 160, surv: 0
+Used at 0x5cf1b7ca8a18, size 16, surv: 0
+Free at 0x5cf1b7ca8a40, size 488, surv: 0
+
+Graphical Representation:
+AAAAAAAAAaaaaaaaaaaaaaabbbbbbbbbbbbbBBBBBBBBBBBBBBBBBBBBBBBCCCCCcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+Free List
+Block at 0x5cf1b7ca8888, size 88
+Block at 0x5cf1b7ca88f8, size 80
+Block at 0x5cf1b7ca8a40, size 488
+Managed List
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5cf1b7ca8858
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = (nil)
+ManagedList[5] = (nil)
+ManagedList[6] = 0x5cf1b7ca8978
+ManagedList[7] = 0x5cf1b7ca8a30
+ManagedList[8] = 0x5cf1b7ca8458
+
+********* MAJOR COLLECTION ***********
+Starting major collection on old heap.
+MEMORY DUMP
+Current heap (0/1 young): 1
+Young Heap (only the current one)
+Memory Block
+Used at 0x5cf1b7ca8440, size 56, surv: 2
+Free at 0x5cf1b7ca8490, size 920, surv: 23793
+
+Graphical Representation:
+AAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8490, size 920
+Old Heap
+Memory Block
+Used at 0x5cf1b7ca8840, size 160, surv: 0
+Used at 0x5cf1b7ca88f8, size 0, surv: 0
+Free at 0x5cf1b7ca8910, size 792, surv: 0
+
+Graphical Representation:
+AAAAAAAAAAAAAAAAAAAAAAABBBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free List
+Block at 0x5cf1b7ca8910, size 792
+Managed List
+ManagedList[0] = 0x5cf1b7ca8910
+ManagedList[1] = 0x5cf1b7ca8858
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = (nil)
+ManagedList[5] = (nil)
+ManagedList[6] = 0x5cf1b7ca8978
+ManagedList[7] = 0x5cf1b7ca8a30
+ManagedList[8] = 0x5cf1b7ca8458
+
+Memory access is: 
